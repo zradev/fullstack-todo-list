@@ -1,0 +1,119 @@
+.todoList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.status {
+  width: 25px;
+  height: 25px;
+  margin-left: 16px;
+  border-radius: 50%;
+  background-color: #6c717b;
+  transition: 0.4s;
+}
+
+.completed {
+  background-image: linear-gradient(to bottom, #d81e5b, #8a4efc);
+}
+
+.todo {
+  display: flex;
+  flex: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131a26;
+  margin: 10px 20px;
+  width: 800px;
+  max-width: 80%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addTodoBtn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: 900;
+  color: #eee;
+  background-color: #d81e5b;
+  background-image: linear-gradient(to bottom right, #d81e5b, #8a4efc);
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  max-width: 400px;
+  background-color: #eee;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 32px #131a26;
+}
+
+.closePopup {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #131a26;
+  cursor: pointer;
+}
+
+.popup h3 {
+  text-align: center;
+  color: #131a26;
+  margin-bottom: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.add-todo-input {
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  width: 100%;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.button {
+  padding: 16px 32px;
+  border-radius: 999px;
+  background-image: linear-gradient(to right, #d81e5b, #8a4efc);
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.closeBtn {
+  color: #131a26;
+  background-color: #d81e5b;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 50%;
+  font-weight: 1000;
+}
